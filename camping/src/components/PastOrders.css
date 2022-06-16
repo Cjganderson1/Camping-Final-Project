@@ -1,29 +1,42 @@
 .past-orders-root {
-  background-color: rgba(255, 255, 255);
-  backdrop-filter: blur(2px);
+  height: 100vh;
+  background-color: #5D1400;
+  /* backdrop-filter: blur(2px); */
+  padding: 2em;
+}
+
+.past-orders-root>span {
+
+  color: #ffff;
+  font-size: 30px;
+  display: table;
+  margin: 0 auto;
+
 }
 
 .past-orders-root table {
   table-layout: auto;
   max-width: 1000px;
   margin: auto;
-  border: solid black 1px;
+  border: solid #08055D 3px;
   border-collapse: collapse;
+  color: #08055D;
+  font-weight: 900;
 }
 
 .past-orders-root td {
-    padding: 2px 1.5rem;
+  padding: 2px 1.5rem;
 }
 
-.past-orders-root td:not(td:first-child)
- {
-    text-align: right;
+.past-orders-root td:not(td:first-child) {
+  text-align: right;
 }
 
 .past-orders-root tr:nth-child(even) {
-    background-color: #ffffff;
+  background-color: #ffff;
 }
+
 .past-orders-root tr:nth-child(odd) {
-    background-color: #eaeaea;
+  background-color: lightgray;
 
 }

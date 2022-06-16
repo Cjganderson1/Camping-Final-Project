@@ -1,0 +1,11 @@
+.login .login-container button[type="submit"] {
+    background-color: #5D1400;
+    margin: auto;
+    margin-top: .25em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}

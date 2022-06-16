@@ -23,12 +23,11 @@ export const MenuItems = [
     },
 
 
-
-    // {
-    //     title: 'Orders',
-    //     url: '/transactions',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Orders',
+        url: '/transactions',
+        cName: 'nav-links'
+    },
     {
         title: <FontAwesomeIcon icon={faShoppingCart} size="lg" />,
         url: '/cart',

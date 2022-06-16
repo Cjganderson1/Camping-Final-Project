@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { Link, useNavigate, useAlert } from 'react-router-dom'
-
 import { useAxios } from '../../services/axios.service'
 import './SignUpPage.css'
 import { useLocalStorage } from '../../services/localStorage.service'
+import { faCampground } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function SignUpPage() {
 
@@ -19,21 +22,27 @@ export default function SignUpPage() {
                 navigate(`/`);
             }).catch(err => {
 
-                if (err.response.status == 400 ? alert("message: that email already exists") : alert("message: there was an eror creating a new user"))
+                if (err.response.status == 400 ? alert("message: that email/password already exists") : alert("message: there was an eror creating a new user"))
 
                     console.error(err);
             });
     }
 
     return (
-        <div className="login">
-            <br />
-            <br />
-            <SignUpForm onSubmit={attemptSignUp} />
-            <hr />
-            <Link to="/login">
-                <button type="button">Log In</button>
-            </Link>
+
+        <div className="login-root">
+            <div className="login">
+                <br />
+                <SignUpForm onSubmit={attemptSignUp} />
+                {/* <Link to="/login">
+                    <button type="button">Log In</button>
+                </Link> */}
+                <hr />
+                <br />
+                <h4 className="login-faCampground" ><span >Boon  &nbsp;<FontAwesomeIcon icon={faCampground} />&nbsp; Docks</span></h4>
+                <br />
+                <br />
+            </div>
         </div>
     )
 }
@@ -64,10 +73,14 @@ function SignUpForm({ onSubmit }) {
     }
 
     return (
+        <div className="login-container">
+            <form onSubmit={handleSubmit}>
 
-        <form onSubmit={handleSubmit}>
-            <div className="email">
-
+                <button type="submit"
+                    disabled={!user.email || !user.password}>
+                    Sign Up
+                </button>
+                <br />
                 <label >Email:</label>
                 <input type="text"
                     className={isEmailTaken ? 'email-taken' : ''}
@@ -75,17 +88,15 @@ function SignUpForm({ onSubmit }) {
                     required
                     value={user.email}
                     onChange={handleChange} />
-            </div>
+                <br />
+                <label>Create Password:</label>
+                <input type="password"
+                    name="password"
+                    value={user.password}
+                    onChange={handleChange} />
 
-            <label>Password:</label>
-            <input type="password"
-                name="password"
-                value={user.password}
-                onChange={handleChange} />
-            <br />
 
-            <button type="submit"
-                disabled={!user.email || !user.password}>Sign Up</button>
-        </form>
+            </form>
+        </div>
     )
 }

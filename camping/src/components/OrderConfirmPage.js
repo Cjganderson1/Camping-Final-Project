@@ -57,7 +57,7 @@ export default function OrderConfirmPage() {
                     <div className="order-status1">
 
                         {transactionId == order.id
-                            ? `Thank you for shopping with us!!!`
+                            ? `Order Confirmed`
                             : `Order '${transactionId}' Doesnt exist`}
 
 
@@ -110,6 +110,7 @@ export default function OrderConfirmPage() {
                         </div>
                     </div>
                 ))}
+
             </div>
 
         </div>

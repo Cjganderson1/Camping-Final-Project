@@ -118,7 +118,7 @@ exports.createNewUser = async (req, res) => {
 
                 res.status(400).send({
                     error: err,
-                    message: 'That email already exists',
+                    message: 'That email/password already exists',
                 })
 
             } else {

@@ -204,6 +204,7 @@ exports.getAllTransactionsByUserId = (req, res) => {
             res.status(404)
                 .send({
                     message: "no transactions found"
+
                 })
         } else {
             res.send({

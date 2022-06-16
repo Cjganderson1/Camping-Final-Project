@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useHistory } from 'react'
-import { Link, useParams, Navigate, useNavigate } from "react-router-dom";
+import { Link, useParams, Navigate, useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
@@ -20,6 +20,7 @@ export default function NavBar() {
     const [clicked, setClicked] = useState(false)
     const [user, setUser] = useState({})
     const ls = useLocalStorage();
+    const location = useLocation()
 
 
 
@@ -44,16 +45,17 @@ export default function NavBar() {
         // /login
     }
 
+
     useEffect(() => {
         setUser(ls.getUser());
-        console.log("test");
-    }, [])
+        console.log("HANDLE ROUTER CHANGER HERE", location);
+    }, [location])
 
 
     return (
 
         <nav className=" NavBarItems">
-            <Link to='/'><h1 className="navbar-logo"><span className="faCampground" > Boon &nbsp;<FontAwesomeIcon icon={faCampground} /> <span> &nbsp; Dock's </span>
+            <Link to='/' className="boonlink" ><h1 className="navbar-logo"><span className="faCampground" > Boon &nbsp;<FontAwesomeIcon icon={faCampground} /> <span> &nbsp; Docks </span>
             </span></h1></Link>
 
             {/* <Link to=‘/’>Home</Link> */}
@@ -103,21 +105,24 @@ export default function NavBar() {
             }
 
 
-            {/* 
-
-<Link to='/login'>
-                            <FontAwesomeIcon icon={faUser} color="#ffff" />
-                        </Link> */}
-
-            {/* 
-                <p> <Link to='/login'><h1 className="navbar-userOut"><span className="faUserLogOut" ><FontAwesomeIcon icon={faUserXmark} color="#ffff" /> <span> </span>
-                </span></h1></Link></p>} */}
-
-
-            {/* <Button>Sign Up</Button> */}
 
 
         </nav >
     )
 }
 
+
+
+{
+    /* 
+
+<Link to='/login'>
+                    <FontAwesomeIcon icon={faUser} color="#ffff" />
+                </Link> */}
+
+{/* 
+        <p> <Link to='/login'><h1 className="navbar-userOut"><span className="faUserLogOut" ><FontAwesomeIcon icon={faUserXmark} color="#ffff" /> <span> </span>
+        </span></h1></Link></p>} */}
+
+
+{/* <Button>Sign Up</Button> */ }

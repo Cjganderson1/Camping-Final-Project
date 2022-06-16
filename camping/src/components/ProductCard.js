@@ -31,7 +31,10 @@ export default function TentProductCard({ id, name, price, brand, color, style, 
         window.alert("Please Log In To Add Item to Cart")
     }
 
+    function tellUserItemAddedtoCart() {
+        window.alert("Item was addded to your cart")
 
+    }
 
     return (
         <div className='tent-product-card'>
@@ -44,10 +47,10 @@ export default function TentProductCard({ id, name, price, brand, color, style, 
                 <h4 className='description'>{description}</h4>
 
                 <button
-                    onClick={addItemToCart}
+                    onClick={user ? addItemToCart : requestUserLogin}
                     className='add-button'
                 >
-                    <span> Add to test</span>
+                    <span> Add to Cart</span>
                 </button>
             </div>
         </div>

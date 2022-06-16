@@ -1,7 +1,7 @@
 .login-root {
   height: 100vh;
   background-color: #5D1400;
-  padding: 10%;
+  padding: 5%;
 
 
 
@@ -22,7 +22,7 @@
 
 }
 
-.login-contianer {
+.login-container {
   /* height: 100%; */
   background-color: #08055D;
   resize: horizontal;
@@ -54,7 +54,7 @@
 
 .login label {
   display: inline-block;
-  width: 6em;
+  width: 8em;
   text-align: center;
   margin-right: 0.5rem;
   color: #fff

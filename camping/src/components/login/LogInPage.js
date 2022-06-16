@@ -18,7 +18,7 @@ export default function LogInPage() {
 
             <LogInForm />
             <hr />
-            <h4 className="login-faCampground" ><span >Boon  &nbsp;<FontAwesomeIcon icon={faCampground} />&nbsp; Dock's</span></h4>
+            <h4 className="login-faCampground" ><span >Boon  &nbsp;<FontAwesomeIcon icon={faCampground} />&nbsp; Docks</span></h4>
 
             {/* <h3 className='header'>Boon Dock's</h3> */}
             <br />
@@ -75,28 +75,29 @@ function LogInForm() {
         }
     }
 
-    return (<div className="login-contianer">
-        <form onSubmit={handleSubmit}>
-            <label className='label'>Email:</label>
-            <input type="text"
-                ref={emailRef}
-                name="email"
-                value={user.email}
-                style={{ "--animationTime": `${animationTime}ms` }}
-                onChange={handleChange} />
-            <br />
+    return (
+        <div className="login-container">
+            <form onSubmit={handleSubmit}>
+                <label className='label'>Email:</label>
+                <input type="text"
+                    ref={emailRef}
+                    name="email"
+                    value={user.email}
+                    style={{ "--animationTime": `${animationTime}ms` }}
+                    onChange={handleChange} />
+                <br />
 
-            <label className='label'>Password:</label>
-            <input type="password"
-                ref={passwordRef}
-                name="password"
-                value={user.password}
-                style={{ "--animationTime": `${animationTime}ms` }}
-                onChange={handleChange} />
-            <br />
+                <label className='label'>Password:</label>
+                <input type="password"
+                    ref={passwordRef}
+                    name="password"
+                    value={user.password}
+                    style={{ "--animationTime": `${animationTime}ms` }}
+                    onChange={handleChange} />
+                <br />
 
-            <button type="submit">Log In</button>
-        </form>
-    </div>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
     )
 }
