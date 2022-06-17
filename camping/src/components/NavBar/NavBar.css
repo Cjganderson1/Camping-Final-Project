@@ -28,7 +28,8 @@
 }
 
 .navbar-userOut:hover {
-    background-color: #5D1400;
+    background-color: rgb(226, 199, 164);
+    ;
     border-radius: 4px;
     padding: .4em;
     color: #fff;
@@ -40,14 +41,16 @@
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    padding: .5em;
+    margin: 1em;
 
 
 }
 
 .navbar-userIn .linkLogin:hover {
-    background-color: #5D1400;
+    background-color: rgb(226, 199, 164);
     border-radius: 4px;
-    padding: .4em;
+    /* padding: .4em; */
     color: #fff;
     transition: all 500ms ease-out;
 
@@ -92,7 +95,7 @@
 }
 
 .nav-links:hover {
-    background-color: #5D1400;
+    background-color: rgb(226, 199, 164);
     ;
     border-radius: 4px;
     color: #fff;
@@ -121,7 +124,16 @@
     list-style-type: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
+
+    /* .navbar-userIn .linkLogin {
+        display: none;
+    } */
+
+    .faCampground {
+        display: none;
+    }
+
     .NavBarItems {
         position: relative;
     }
@@ -170,7 +182,7 @@
         display: block;
         position: absolute;
         top: o;
-        right: 0;
+        left: 2em;
         transform: translate(-100%, 0%);
         font-size: 1.8rem;
         cursor: pointer;

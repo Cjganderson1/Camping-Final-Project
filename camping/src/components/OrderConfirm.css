@@ -3,8 +3,9 @@
     /* margin-top: 2em; */
     width: 100vw;
     height: 100vh;
-    background-color: #5D1400;
-    border: solid #5D1400;
+    /* background-color: rgb(226, 199, 164); */
+    background-color: rgb(226, 199, 164);
+    /* background-color: #5D1400; */
     overflow: scroll;
     /* backdrop-filter: blur(2px); */
 
@@ -25,7 +26,7 @@
 .order-display {
     display: flex;
     flex-direction: row;
-    border: solid #08055D;
+    /* border: solid #08055D; */
     margin: 1em;
     justify-content: left;
     gap: 3em;
@@ -109,4 +110,125 @@
 
 .grand-total {
     font-weight: 900;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .order-root {
+
+        /* margin-top: 2em; */
+        width: 100vw;
+        height: 100vh;
+        /* background-color: rgb(226, 199, 164); */
+        background-color: rgb(226, 199, 164);
+        /* background-color: #5D1400; */
+        overflow: scroll;
+        /* backdrop-filter: blur(2px); */
+
+    }
+
+    .order-page-content {
+
+        /* padding: 2rem; */
+        background-color: #fff;
+        /* backdrop-filter: blur(10px); */
+        /* box-shadow: 0 0 16px rgba(69, 69, 69, 0.594); */
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .order-display {
+        display: flex;
+        flex-direction: row;
+        /* border: solid #08055D; */
+        margin: .25em;
+        /* justify-content: left; */
+        /* gap: 3em; */
+    }
+
+    .product-image-frame2 {
+        /* padding: 1em; */
+        max-height: 100%;
+        max-width: 50%;
+        background-color: #fff;
+        color: #fff;
+        overflow: hidden;
+        justify-content: flex-start;
+        flex: 1 1 200px;
+        text-align: center;
+        /* margin-bottom: 1em; */
+
+    }
+
+    .order-detail-root {
+
+        color: #08055D;
+
+
+    }
+
+    .order-detail-root img {
+        height: 6rem;
+        width: 6rem;
+        margin: auto;
+
+
+    }
+
+
+
+    .order-data-root {
+        padding: 2em;
+        text-align: right;
+        margin-right: .25em;
+        /* border: black solid; */
+    }
+
+    .order-status-root {
+
+        margin-top: 2em;
+        padding-top: 1em;
+    }
+
+    .order-status-root>* {
+        display: flex;
+        flex-direction: column;
+        color: #08055D;
+        /* border: solid black; */
+        /* padding: .2em; */
+        text-align: left;
+        padding: .25em;
+    }
+
+
+    .orderDate-display {
+
+        font-weight: 900;
+
+    }
+
+    .order-status1 {
+
+        font-weight: 900;
+        align-items: center;
+        font-size: 30px;
+        color: #08055D;
+
+
+    }
+
+    .order-status2 b {
+        font-weight: 900;
+        color: #08055D;
+    }
+
+    .grand-total {
+        font-weight: 900;
+    }
+
+
+
 }

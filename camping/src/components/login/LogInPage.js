@@ -12,11 +12,11 @@ export default function LogInPage() {
 
     return (<div className="login-root">
         <div className="login">
+
+            <LogInForm />
             <Link to="/signup">
                 <button type="button">Sign Up</button>
             </Link>
-
-            <LogInForm />
             <hr />
             <h4 className="login-faCampground" ><span >Boon  &nbsp;<FontAwesomeIcon icon={faCampground} />&nbsp; Docks</span></h4>
 
@@ -78,6 +78,7 @@ function LogInForm() {
     return (
         <div className="login-container">
             <form onSubmit={handleSubmit}>
+                <button type="submit">Log In</button>
                 <label className='label'>Email:</label>
                 <input type="text"
                     ref={emailRef}
@@ -96,7 +97,7 @@ function LogInForm() {
                     onChange={handleChange} />
                 <br />
 
-                <button type="submit">Log In</button>
+
             </form>
         </div>
     )

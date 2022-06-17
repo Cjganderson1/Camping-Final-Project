@@ -9,7 +9,7 @@ import img from './images/camping-checklist-equipment-food-essentials-tent-sleep
 
 export default function Homepage() {
 
-    // pushed sat 15 june 9pm
+    // final project push fri 17 june 8:30
 
     return (
         <div className="homepage-container">
@@ -51,7 +51,7 @@ export default function Homepage() {
 
             </div>
             <div className="quote">
-                <h1>Wander Often, Wonder Always,</h1>
+                {/* <h1>Wander Often, Wonder Always,</h1> */}
                 <h1>!!!Lets Go Camping!!!&nbsp;&nbsp;<span><Link to="/products"> <Button type="button" className="shop-button"> Shop </Button></Link></span></h1>
                 <h4>Boondocks:&nbsp;A jungle or a wild, heavily wooded area; wilderness. </h4>
                 <p className="quote">

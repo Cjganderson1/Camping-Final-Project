@@ -1,11 +1,73 @@
 .login .login-container button[type="submit"] {
-    background-color: #5D1400;
+    background-color: rgb(226, 199, 164);
+    ;
     margin: auto;
     margin-top: .25em;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
     align-items: center;
     justify-content: center;
     display: flex;
 
 
+}
+
+@media screen and (max-width: 480px) {
+    /* .navbar-userIn .linkLogin {
+        display: none;
+    } */
+
+    .login .login-container button[type="submit"] {
+        background-color: rgb(226, 199, 164);
+        ;
+        margin: auto;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .login-root {
+        /* display: flex; */
+        /* border: solid black 10px; */
+        padding: 5%;
+    }
+
+    .login-root .login {
+        /* border: solid white 10px; */
+
+        width: 70%;
+        border-radius: 5%;
+        height: 70%;
+        margin-top: 5;
+        height: 20em;
+        margin: auto;
+    }
+
+    .login-root .login .login-container {
+        /* height: 100%; */
+        resize: horizontal;
+        resize: vertical;
+        overflow: auto;
+        margin-bottom: 0;
+        /* border: solid blue 10px; */
+
+    }
+
+
+    .login-container .login form {
+        height: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login label {
+        display: inline-block;
+        width: 4em;
+        text-align: center;
+        margin-right: 0.5rem;
+        color: #fff
+    }
 }

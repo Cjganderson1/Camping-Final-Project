@@ -115,7 +115,7 @@ export default function ShoppingCart() {
     return (
         <div className="shopping-cart-root"
             onSubmit={handleCheckout}>
-            <h2 className="cart-header">Shopping Cart</h2>
+            {/* <h2 className="cart-header"> Cart</h2> */}
             <div>
                 {cartItems?.length === 0 &&
                     <div className="empty-cart">
@@ -179,7 +179,7 @@ function CartItem({ id, name, price, quantity, onIncrease, onDecrease }) {
 
             <div className="item-name">
                 <div>{name}</div>
-                <div>${price?.toFixed(2)}</div>
+                {/* <div>${price?.toFixed(2)}</div> */}
             </div>
             <div className="quantity-btn">
                 <button

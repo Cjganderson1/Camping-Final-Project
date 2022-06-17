@@ -2,6 +2,17 @@ DROP SCHEMA IF EXISTS `camping`;
 
 CREATE SCHEMA `camping`;
 
+CREATE TABLE `camping`.`cart_items` (
+    `id` INT NOT NULL UNIQUE AUTO_INCREMENT,
+    `customer_id` VARCHAR(50) NOT NULL,
+    `product_id` VARCHAR(50) NOT NULL,
+    `quantity` INT NOT NULL,
+    `total` FLOAT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`product_id`) REFERENCES `products`(`id`),
+    FOREIGN KEY (`customer_id`) REFERENCES `users`(`id`) ON DELETE CASCADE
+);
+
 CREATE TABLE `camping`.`products` (
     `id` VARCHAR(50) NOT NULL UNIQUE,
     `name` VARCHAR(255) NOT NULL,

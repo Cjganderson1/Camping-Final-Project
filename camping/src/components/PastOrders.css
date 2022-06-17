@@ -1,6 +1,7 @@
 .past-orders-root {
   height: 100vh;
-  background-color: #5D1400;
+  /* background-color: #5D1400; */
+  background-color: rgb(226, 199, 164);
   /* backdrop-filter: blur(2px); */
   padding: 2em;
 }
@@ -38,5 +39,58 @@
 
 .past-orders-root tr:nth-child(odd) {
   background-color: lightgray;
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .past-orders-root {
+    height: 100vh;
+    /* background-color: #5D1400; */
+    background-color: rgb(226, 199, 164);
+    /* backdrop-filter: blur(2px); */
+    padding: 1em;
+    overflow: scroll;
+  }
+
+  .past-orders-root>span {
+
+    color: #ffff;
+    font-size: 30px;
+    display: table;
+    margin: 0 auto;
+
+  }
+
+  .past-orders-root table {
+    table-layout: auto;
+    max-width: 300px;
+    max-height: 300px;
+    /* margin: auto; */
+    padding: 1em;
+    border: solid #08055D 10px;
+    border-collapse: collapse;
+    color: red;
+    ;
+    font-weight: 900;
+  }
+
+  .past-orders-root td {
+    padding: 2px 1.5rem;
+  }
+
+  .past-orders-root td:not(td:first-child) {
+    text-align: right;
+  }
+
+  .past-orders-root tr:nth-child(even) {
+    background-color: #ffff;
+  }
+
+  .past-orders-root tr:nth-child(odd) {
+    background-color: lightgray;
+
+  }
 
 }

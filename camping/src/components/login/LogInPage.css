@@ -1,11 +1,8 @@
 .login-root {
   height: 100vh;
-  background-color: #5D1400;
+  background-color: rgb(226, 199, 164);
+  ;
   padding: 5%;
-
-
-
-
 }
 
 .login {
@@ -17,7 +14,7 @@
   margin-top: 5;
   height: 20em;
   margin: auto;
-  border: solid #5D1400;
+  /* border: solid #5D1400; */
   ;
 
 }
@@ -57,6 +54,7 @@
   width: 8em;
   text-align: center;
   margin-right: 0.5rem;
+  margin-top: 75;
   color: #fff
 }
 
@@ -73,7 +71,7 @@
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  background-color: rgb(72, 22, 22);
+  background-color: rgb(226, 199, 164);
   /* margin-top: 1em; */
 
   justify-content: center;
@@ -86,24 +84,30 @@
   filter: brightness(90%);
 }
 
+.login a {
+  text-decoration: none;
+}
+
 .login button[type="button"] {
-  background-color: #5D1400;
+  background-color: rgb(226, 199, 164);
   margin: auto;
   margin-top: 1em;
   margin-bottom: 1em;
   align-items: center;
   justify-content: center;
+  width: 8em;
+  font-size: 10pt;
   display: flex;
 
 
 }
 
 .login button[type="submit"] {
-  background-color: #5D1400;
+  /* background-color: #5D1400; */
   margin: auto;
-  width: 6em;
-  margin-bottom: 1.5em;
-  ;
+  width: 8em;
+  margin-bottom: 2em;
+
 }
 
 
@@ -134,6 +138,8 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
+
+
 
 /* 
 @keyframes shake {

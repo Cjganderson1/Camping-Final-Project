@@ -9,7 +9,7 @@
 
 .homepage-container {
     height: 100vh;
-    background-color: #5D1400;
+    background-color: rgb(226, 199, 164);
     position: relative;
     background-size: cover;
     background-size: 100%;
@@ -18,7 +18,7 @@
 
 .homepage-container h4 {
 
-    color: #fff;
+    color: #08055D;
     margin: 0;
     margin-left: 0em;
     margin-right: 4em;
@@ -29,18 +29,21 @@
 }
 
 .homepage-container h1 {
-    color: #fff;
+    color: #08055D;
     margin: 0;
     font-weight: bolder;
     font-weight: 900;
 }
 
+.quote a {
+    text-decoration: none;
+}
 
 .quote {
 
     position: absolute;
-    top: 12em;
-    left: 17em;
+    top: 4.25em;
+    left: 19em;
     flex-wrap: wrap;
     align-items: center;
     height: fit-content;
@@ -67,12 +70,13 @@
     padding-top: 2.5;
     /* margin-top: 3em; */
     top: 4em;
+    text-decoration: none;
 }
 
 .quote .btn:hover {
     /* padding: 1em; */
     transition: all 0.3s ease-out;
-    background: #5D1400;
+    background: rgb(226, 199, 164);
     background-size: 100%;
     color: #fff;
     ;
@@ -95,7 +99,7 @@
     -moz-background-size: cover;
     -o-background-size: cover; */
     background-size: 100%;
-    opacity: .55;
+    opacity: .6;
     height: 70vh;
     width: 70vw;
     background-size: cover;
@@ -156,3 +160,52 @@
     transition: 250ms;
 
 } */
+@media screen and (max-width: 480px) {
+
+
+    .quote {
+        position: absolute;
+        top: 17em;
+        left: 5em;
+        flex-wrap: wrap;
+        align-items: center;
+        height: fit-content;
+        /* color: #08055D; */
+
+        padding: 1em;
+        border-radius: 6px;
+        position: z 1;
+        z-index: 1;
+        font-size: 16px;
+
+
+    }
+
+    .product-image-frame {
+        border: solid red;
+        display: none;
+        align-items: center;
+        margin-left: 14em;
+        margin-top: 1em;
+
+
+    }
+
+    .product-image-frame img {
+        background: url("./images/camping-checklist-equipment-food-essentials-tent-sleeping-gear-checklist.jpeg") no-repeat center center fixed;
+        /* background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+        background-size: 100%;
+        opacity: .7;
+        height: 70vh;
+        width: 70vw;
+        background-size: cover;
+        align-items: center;
+        margin: auto;
+
+
+
+    }
+}

@@ -1,9 +1,10 @@
 .tent-product-card {
     padding: 1em;
     max-height: 100%;
-    background-color: #5D1400;
+    /* background-color: rgb(226, 199, 164); */
+    background-color: #ffff;
     ;
-    color: #fff;
+    color: #08055D;
 
     overflow: hidden;
     justify-content: space-evenly;
@@ -49,7 +50,7 @@
 .product-name {
     font-weight: bold;
     font-size: large;
-    color: #ffff
+    color: #08055D;
 }
 
 .add-button {
@@ -83,9 +84,9 @@
     transition: 0.5s;
 }
 
-.add-button:hover span {
+/* .add-button:hover span {
     padding-right: 25px;
-}
+} */
 
 .add-button:hover span:after {
     opacity: 1;

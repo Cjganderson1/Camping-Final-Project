@@ -1,6 +1,7 @@
 .shopping-cart-root {
-    background-color: #5D1400;
-    ;
+    /* background-color: #5D1400; */
+    background-color: rgb(226, 199, 164);
+    padding-top: 2em;
 
 }
 
@@ -8,7 +9,8 @@
     text-align: center;
     margin-top: 0;
     padding-top: 1em;
-    color: #fff;
+    color: #08055D;
+    ;
     font-size: 30px;
 }
 
@@ -150,6 +152,174 @@
     height: 5em;
     border-radius: 8px;
 
-    background-color: rgb(72, 22, 22);
-    color: white;
+    background-color: #08055D;
+    ;
+    color: #fff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .shopping-cart-root {
+        /* background-color: #5D1400; */
+        background-color: rgb(226, 199, 164);
+        ;
+
+    }
+
+    .shopping-cart-root .cart-header {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 1em;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .shopping-cart-root .cart-container {
+        /* border: solid black 3px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        height: 100vh;
+        max-width: fit-content;
+        margin-top: 2em;
+        /* margin: auto; */
+        /* border: solid black 10px; */
+        color: #08055D;
+        ;
+
+    }
+
+
+    .shopping-cart-root .cart-summary-container {
+
+        display: flex;
+        flex-direction: column;
+        gap: .75em;
+        border: solid #08055D 2px;
+        border-radius: 4px;
+        text-align: left;
+        width: 80%;
+        height: fit-content;
+        padding: 1em;
+        text-align: center;
+        background-color: #fff;
+
+        margin: 1em auto;
+
+    }
+
+    /* checkout button style */
+    .shopping-cart-root .cart-summary-container .checkout-btn {
+        background-color: #08055D;
+        ;
+        color: #fff;
+        font-size: 1em;
+        width: 10em;
+        height: 2.5em;
+        border-radius: 6px;
+        border: none;
+        margin: auto;
+    }
+
+    /* checkout button active */
+    .shopping-cart-root .cart-summary-container .checkout-btn:active {
+        background-color: rgb(72, 22, 22);
+        color: white;
+        border: solid black;
+
+    }
+
+    .shopping-cart-root .item-row-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 1em;
+        background-color: white;
+        color: #08055D;
+        border: solid #08055D;
+        margin: auto;
+    }
+
+
+
+    /* quanitity buttons style */
+    .shopping-cart-root .item-row-container button {
+        width: 2em;
+        height: 2em;
+        margin-right: .5em;
+        border-radius: 5px;
+        border: none;
+        background-color: #08055D;
+        ;
+        color: white;
+        font-size: medium;
+    }
+
+    /* quantity buttons active */
+    .shopping-cart-root .item-row-container button:active {
+        background-color: #5D1400;
+        color: black;
+
+    }
+
+    .shopping-cart-root .item-row-container .item-quantity {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .shopping-cart-root .item-row-container .item-name {
+        width: 10em;
+    }
+
+    .shopping-cart-root .item-row-container .item-price {
+        text-align: right;
+        width: 5em;
+    }
+
+    .shopping-cart-root .shopping-cart-items {
+        max-height: 70vh;
+        overflow-y: auto;
+        margin-top: 1em;
+        color: green;
+    }
+
+    .shopping-cart-root .cart-summary-container>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .shopping-cart-root .cart-summary-container .total-cost {
+        border-top: solid #c5c0c0 1px;
+    }
+
+    .shopping-cart-root .cart-summary-container .summary-header {
+        border-bottom: solid #c5c0c0 1px;
+        font-size: large;
+        margin-top: .5em;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+    }
+
+    .shopping-cart-root .empty-cart {
+        text-align: center;
+        font-size: larger;
+
+        margin: auto;
+        line-height: 5em;
+        width: 90%;
+        height: 5em;
+        border-radius: 8px;
+
+        background-color: #08055D;
+        ;
+        color: white;
+    }
 }
